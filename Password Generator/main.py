@@ -5,10 +5,8 @@ lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 signs = ["^", "!", "§", "$", "%", "&", "/", "(", ")", "=", "?", "{", "[", "]", "}", "_", "-"]
 
 def generateRandomPassword():
-  passwordPart1 = random.choice(upperCaseLetters) + random.choice(lowerCaseLetters) + str(random.randint(0, 9)) + random.choice(signs)
-    
+  passwordPart1 = random.choice(upperCaseLetters) + random.choice(lowerCaseLetters) + str(random.randint(0, 9)) + random.choice(signs) 
   passwordPart2 = random.choice(upperCaseLetters) + random.choice(lowerCaseLetters) + str(random.randint(0, 9)) + random.choice(signs)
-    
   newPassword = passwordPart1 + passwordPart2
   print('Your generated password is:', newPassword)
   
